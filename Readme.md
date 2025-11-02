@@ -14,7 +14,7 @@ Follow these steps to create and import the database using phpMyAdmin:
 3. **Import the Database SQL File**:
    - Select the newly created database.
    - Click on the “Import” tab.
-   - Click “Browse” and locate the `db_tech_digest.sql` file in the `src/database` folder.
+   - Click “Browse” and locate the `db_tech_digest.sql` file in the `db` folder.
    - Select the `db_tech_digest.sql` file and click “Open” in the system dialog.
    - Click “Go” to start the import process.
 

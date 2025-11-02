@@ -3,7 +3,7 @@
     include "models/login.php";
 
     $errors = [];
-
+    
     if(isset($_SESSION['id'])) {
         header("Location: blogs");
     }
@@ -20,8 +20,10 @@
             if(!empty($user)) {
                 $_SESSION['id'] = $user['id'];
                 $_SESSION['name'] = $user['name'];
-                $_SESSION['flash_message'] = "You have successfully logged in."
-                ;    
+                $_SESSION['flash_message'] = [
+                    'type' => 'success',
+                    'text' => 'Welcome back, ' . htmlspecialchars($user['name']) . '!'
+                ];
                 header("Location: blogs");
                 exit;
             } else {    

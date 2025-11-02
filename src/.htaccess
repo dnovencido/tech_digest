@@ -1,6 +1,23 @@
 <IfModule mod_rewrite.c>
+  # Enable URL rewriting
   RewriteEngine On
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME}.php -f
+
+  # blogs/new → blogs_new.php
+  RewriteRule ^blogs/new$ blogs_new.php [L,QSA]
+
+  # blogs/{id}/view → blogs_view.php?id={id}
+  RewriteRule ^blogs/([^/]+)/view$ blogs_view.php?id=$1 [L,QSA]
+
+  # blogs/{id}/edit → blogs_edit.php?id={id}
+  RewriteRule ^blogs/([^/]+)/edit$ blogs_edit.php?id=$1 [L,QSA]
+
+  # blogs/{id}/delete → blogs_delete.php?id={id}
+  RewriteRule ^blogs/([^/]+)/delete$ blogs_delete.php?id=$1 [L,QSA]
+
+  # blogs → blogs.php
+  RewriteRule ^blogs$ blogs.php [L,QSA]
+
+  # Anything else without .php → same file with .php
   RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
 </IfModule>

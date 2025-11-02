@@ -18,7 +18,7 @@
             </div>
         </div>
             <div id="right-banner">
-            <img src="assets/images/banner-image.png" alt="Technology">
+            <img src="//assets/images/banner-image.png" alt="Technology">
         </div>
     </div>
 </section>  
@@ -54,7 +54,7 @@
             <div id="blog-container">
                 <div class="blog-item card">
                     <div class="blog-item-preview">
-                        <img src="assets/images/self-driving-car.jpg" alt="" class="featured-image">
+                        <img src="/assets/images/self-driving-car.jpg" alt="" class="featured-image">
                     </div>
                     <div class="blog-item-description">
                         <div class="blog-item-category">
@@ -77,7 +77,7 @@
                 </div>
                 <div class="blog-item card">
                     <div class="blog-item-preview">
-                        <img src="assets/images/programming-languages.jpg" alt="" class="featured-image">
+                        <img src="/assets/images/programming-languages.jpg" alt="" class="featured-image">
                     </div>
                     <div class="blog-item-description">
                         <div class="blog-item-category">
@@ -100,7 +100,7 @@
                 </div>
                 <div class="blog-item card">
                     <div class="blog-item-preview">
-                        <img src="assets/images/gaming-education.jpg" alt="" class="featured-image">
+                        <img src="/assets/images/gaming-education.jpg" alt="" class="featured-image">
                     </div>
                     <div class="blog-item-description">
                         <div class="blog-item-category">
@@ -123,7 +123,7 @@
                 </div>
                 <div class="blog-item card">
                     <div class="blog-item-preview">
-                        <img src="assets/images/gadgets.jpg" alt="" class="featured-image">
+                        <img src="/assets/images/gadgets.jpg" alt="" class="featured-image">
                     </div>
                     <div class="blog-item-description">
                         <div class="blog-item-category">
@@ -146,7 +146,7 @@
                 </div>
                 <div class="blog-item card">
                     <div class="blog-item-preview">
-                        <img src="assets/images/streaming.jpg" alt="" class="featured-image">
+                        <img src="/assets/images/streaming.jpg" alt="" class="featured-image">
                     </div>
                     <div class="blog-item-description">
                         <div class="blog-item-category">
@@ -169,7 +169,7 @@
                 </div>
                 <div class="blog-item card">
                     <div class="blog-item-preview">
-                        <img src="assets/images/programming.jpg" alt="" class="featured-image">
+                        <img src="/assets/images/programming.jpg" alt="" class="featured-image">
                     </div>
                     <div class="blog-item-description">
                         <div class="blog-item-category">
@@ -192,7 +192,7 @@
                 </div>
                 <div class="blog-item card">
                     <div class="blog-item-preview">
-                        <img src="assets/images/metaverse.jpg" alt="" class="featured-image">
+                        <img src="/assets/images/metaverse.jpg" alt="" class="featured-image">
                     </div>
                     <div class="blog-item-description">
                         <div class="blog-item-category">
@@ -215,7 +215,7 @@
                 </div>
                 <div class="blog-item card">
                     <div class="blog-item-preview">
-                        <img src="assets/images/ai.jpg" alt="" class="featured-image">
+                        <img src="/assets/images/ai.jpg" alt="" class="featured-image">
                     </div>
                     <div class="blog-item-description">
                         <div class="blog-item-category">

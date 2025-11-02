@@ -1,7 +1,7 @@
-<?php if (isset($_SESSION['flash_message'])) { ?>
+<?php if (isset($_SESSION['flash_message'])): ?>
     <?php $msg = $_SESSION['flash_message']; ?>
-    <div class="alert alert-<?= $msg['type'] ?> alert-dismissible">
+    <div class="alert alert-<?= $msg['type'] ?>">
         <?= $msg['text'] ?>
     </div>
     <?php unset($_SESSION['flash_message']); ?>
-<?php } ?>
+<?php endif; ?>

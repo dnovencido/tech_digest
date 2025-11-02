@@ -3,12 +3,15 @@
     include "models/registration.php";
 
     $errors = []; 
-    
+
     if(isset($_SESSION['id'])) {
         header("Location: blogs");
     }
 
     if(isset($_POST['submit'])) {
+        if(!$_POST['name']) {
+            $errors[] = "Name is required.";
+        }
         if(!$_POST['email']) {
             $errors[] = "Email is required.";
         }

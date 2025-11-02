@@ -1,18 +1,29 @@
 :root {
     --darkviolet: #330E9E;
     --lightgray: #EEEEEE;
+    --darkgray: #b6b6b6;
     --white: #FFFFFF;
     --black: #000000;
+    --red: #d93434;
+    --blue: #5961f1;
     --font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    height: 100%;
 }
 
 body {
     margin: 0;
-    font-family: var(--font)
+    height: 100%;
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+
+main { 
+    flex-grow: 1;
 }
 
 nav {
@@ -160,11 +171,6 @@ a.btn-secondary, input[type=submit].btn-secondary {
     margin: 2rem 0;
 }
 
-#inner-blog h3 {
-    text-transform: uppercase;
-    text-align: center;
-}
-
 #categories {
     display: flex;
     padding: 1rem 0;
@@ -197,10 +203,6 @@ a.btn-secondary, input[type=submit].btn-secondary {
 
 .active { 
     border-bottom: 3px solid var(--darkviolet);
-}
-
-#blog-list {
-   padding: 0.5rem 0;
 }
 
 #blog-container {
@@ -257,6 +259,159 @@ p.author {
 
 .blog-item-info p {
     margin: 0;
+}
+
+.blog-navigation-item-header {
+    font-weight: bold;
+}
+
+.blog-navigation-item-menu ul {
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 0 0.5rem 0 0;
+}
+
+.blog-navigation-item-menu ul > li {
+    margin: 0 0 1rem;
+}
+
+.blog-navigation-item-menu ul > li a.active {
+    padding: 0 0 0.2rem;
+    border-bottom: 2px solid var(--black);
+}
+
+.blog-navigation-item-menu ul a{
+   text-decoration: none;
+   color: var(--black);
+}
+
+#inner-blog h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#inner-blog-account {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#blog-navigation {
+    border-right: 1px solid var(--lightgray);
+    width: 180px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#blog-new {
+    flex-grow: 1;
+}
+
+.ck-editor__editable_inline:not(.ck-comment__input *) {
+    height: 300px;
+    overflow-y: auto; /* Adds a scrollbar if content exceeds height */
+}
+
+#inner-blogs, #blog-view-container {
+    display: flex;
+    gap: 20px;  
+}
+
+#blog-list {
+    flex-grow: 1;
+}
+
+#blog-view-content {
+    width: 100%;
+}
+
+#blog-view-content .body {
+    margin: 1rem 0;
+    line-height: 1.3;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+#blog-list table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+  
+#blog-list table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem
+}
+  
+#blog-list table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#blog-list table tbody tr:hover { 
+    background-color: var(--lightgray);
+}
+
+#blog-list th {
+    padding: 0.5rem 0.3rem;
+    background-color: var(--darkgray);
+    color: white;
+    text-align: left;
+}
+
+#blog-list td.action-buttons a {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 0.5rem 0.8rem;
+    display: inline-block;
+}
+
+a.btn-info {
+    border: 1px solid var(--blue);
+    color: var(--black);
+}
+
+a.btn-danger {
+    border: 1px solid var(--red);
+    color: var(--black);
+}
+
+.pagination {
+    margin: 0;
+    padding: 0;
+}
+
+#pagination ul {
+    margin: 1rem 0;
+    padding: 0;
+}
+
+#pagination ul > li {
+    display: inline-block;
+}
+
+#pagination ul a {
+    border: 1px solid var(--lightgray);
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.7rem;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+#pagination a.active {
+    background-color:  var(--black);
+    color: var(--white);
+}
+
+#pagination li.disabled {
+    pointer-events: none;
 }
 
 footer {
@@ -372,7 +527,7 @@ footer {
     text-align: center;
 }
 
-#account, #new-blog, #blog-view, #inner-blog{
+.account-main{
     padding: 2.5rem 0;
 }
 
@@ -418,7 +573,7 @@ label {
 
 .alert {
     border: 1px solid;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 1rem 0;
 }
 
@@ -441,7 +596,7 @@ label {
     font-family: var(--font);
     font-size: 0.9rem;
     font-weight: bold;
-    color: var(--darkgray);
+    color: var(--black);
     border: none;
     cursor: pointer;
     background-color: transparent;
@@ -487,4 +642,8 @@ label {
 }
 
 
-
+#blog-view-content .thumbnail img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}

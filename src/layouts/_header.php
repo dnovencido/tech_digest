@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Tech Digest</title>
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
     </head>
     <body>
         <header>
             <nav>
                 <div id="inner-nav" class="container">
                     <div id="logo" class="nav-item">
-                        <a href="/"><img src="assets/images/logo.png" alt="" width="200"></a>
+                        <a href="/"><img src="/assets/images/logo.png" alt="" width="200"></a>
                     </div>
                     <div id="links" class="nav-item">
                         <ul>
